@@ -21,6 +21,7 @@ import { FriendRequestComponent } from './components/friend-request/friend-reque
 import { SuggestGroupComponent } from './components/suggest-group/suggest-group.component';
 import { SuggestPageComponent } from './components/suggest-page/suggest-page.component';
 import { SuggestEventComponent } from './components/suggest-event/suggest-event.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -46,7 +47,8 @@ import { SuggestEventComponent } from './components/suggest-event/suggest-event.
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [
     provideClientHydration()
