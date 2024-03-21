@@ -22,6 +22,7 @@ import { SuggestGroupComponent } from './components/suggest-group/suggest-group.
 import { SuggestPageComponent } from './components/suggest-page/suggest-page.component';
 import { SuggestEventComponent } from './components/suggest-event/suggest-event.component';
 import { HttpClientModule } from '@angular/common/http';
+import { NotificationCompComponent } from './components/notification-comp/notification-comp.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { HttpClientModule } from '@angular/common/http';
     FriendRequestComponent,
     SuggestGroupComponent,
     SuggestPageComponent,
-    SuggestEventComponent
+    SuggestEventComponent,
+    NotificationCompComponent
   ],
   imports: [
     BrowserModule,

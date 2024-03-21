@@ -20,12 +20,12 @@ isAuth$ = new BehaviorSubject<boolean>(false)
     const token = localStorageService.getItem('token')
     const userId = localStorageService.getItem('userId')
      if(token && userId){
-      this.verifyToken(token,userId)
+      this.verifyToken(token, userId)
      }
   }
 
 
-  verifyToken(token: any, userId:any){
+  verifyToken(token: any, userId: any){
     const data = {token, userId}
     this.http.post<ResponseResuest>(environment.apiUrl+"user/verify/token",data).subscribe({
       next:(result: ResponseResuest)=> {
