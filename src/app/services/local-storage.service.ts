@@ -8,7 +8,7 @@ export class LocalStorageService {
 
   constructor() { }
   
-  getItem(key:string){
+  getItem(key: string){
     try{
 
       const item: any = localStorage.getItem(key)
